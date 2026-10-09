@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="一个用来记录生活、写作和学习的小小静态博客。">
+  <title>我的小博客</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="data/posts.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">我的小博客<span>把日子写下来</span></a>
+      <nav aria-label="主导航"><a class="active" href="index.html">首页</a><a href="#about">关于</a></nav>
+    </div>
+  </header>
+  <main class="page-shell">
+    <section class="hero">
+      <p class="eyebrow">日常随记</p>
+      <h1>你好，欢迎来到<br>我的小小角落。</h1>
+      <p>在这里记录生活、学习和那些值得记住的念头。</p>
+    </section>
+    <section class="posts-section" aria-labelledby="posts-heading">
+      <div class="section-heading"><div><p class="eyebrow">最新记录</p><h2 id="posts-heading">最近的文章</h2></div><span id="post-count" class="post-count"></span></div>
+      <div class="post-tools">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="post-search" type="search" placeholder="搜索文章标题或摘要" autocomplete="off" aria-label="搜索文章标题或摘要"></label>
+        <div id="category-filters" class="category-filters" role="group" aria-label="按分类筛选文章"></div>
+      </div>
+      <div id="post-list" class="post-list" aria-live="polite"></div>
+    </section>
+    <section id="about" class="about-card"><p class="eyebrow">关于博客</p><h2>关于这个地方</h2><p>这是一个简单、轻巧的静态博客。没有复杂的系统，只用网页技术和本地文件保存文章。</p></section>
+  </main>
+  <footer class="site-footer"><p>用一点耐心，记录每一个平凡的日子。</p><p class="copyright">© 2026 我的小博客 · 以文字记录日常</p></footer>
+</body>
+</html>

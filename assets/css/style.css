@@ -1,0 +1,70 @@
+
+:root { color-scheme: light; --ink: #272b2a; --muted: #777c78; --paper: #fbfaf7; --line: #e9e7e1; --accent: #497c69; --serif: "Noto Serif SC", "Songti SC", serif; --sans: "DM Sans", "PingFang SC", "Microsoft YaHei", sans-serif; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.site-header { border-bottom: 1px solid var(--line); }
+.header-inner { max-width: 900px; min-height: 76px; margin: auto; padding: 0 28px; display: flex; align-items: center; justify-content: space-between; }
+.brand { text-decoration: none; font-family: var(--serif); font-weight: 700; font-size: 19px; letter-spacing: .02em; }
+.brand span { display: block; margin-top: 2px; color: var(--muted); font-family: var(--sans); font-size: 10px; font-weight: 400; letter-spacing: .12em; }
+nav { display: flex; gap: 26px; color: var(--muted); font-size: 13px; }
+nav a { text-decoration: none; transition: color .2s; } nav a:hover, nav a.active { color: var(--accent); }
+.page-shell { width: min(100% - 48px, 720px); margin: 0 auto; }
+.hero { padding: 84px 0 78px; border-bottom: 1px solid var(--line); }
+.eyebrow { margin: 0 0 15px; color: var(--accent); font-size: 10px; font-weight: 700; letter-spacing: .18em; }
+.hero h1 { margin: 0; font-family: var(--serif); font-size: clamp(36px, 7vw, 54px); line-height: 1.48; font-weight: 500; letter-spacing: .015em; }
+.hero > p:last-child { margin: 18px 0 0; color: var(--muted); font-size: 14px; line-height: 1.9; }
+.posts-section { padding: 67px 0 74px; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 27px; }
+.section-heading .eyebrow { margin-bottom: 8px; }
+.section-heading h2, .about-card h2 { margin: 0; font-family: var(--serif); font-size: 24px; font-weight: 500; }
+.post-count { padding-bottom: 4px; color: #989b96; font-size: 12px; }
+.post-tools { display: grid; gap: 14px; margin: 0 0 22px; }
+.search-box { min-height: 46px; display: flex; align-items: center; gap: 10px; padding: 0 14px; border: 1px solid var(--line); background: #fff; color: #929790; }
+.search-box:focus-within { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(73, 124, 105, .1); }
+.search-box > span { font-size: 22px; line-height: 1; }
+.search-box input { width: 100%; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--ink); font: inherit; font-size: 14px; }
+.search-box input::placeholder { color: #a0a39e; }
+.category-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.filter-chip { min-height: 42px; padding: 0 14px; border: 1px solid var(--line); border-radius: 18px; background: transparent; color: var(--muted); font: inherit; font-size: 12px; cursor: pointer; }
+.filter-chip:hover, .filter-chip.is-active { border-color: var(--accent); background: #eaf0eb; color: var(--accent); }
+.filter-chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.empty-state { margin: 0; padding: 28px 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; line-height: 1.8; text-align: center; }
+.post-list { border-top: 1px solid var(--line); }
+.post-card { border-bottom: 1px solid var(--line); }
+.post-card-link { display: block; padding: 23px 17px 24px; margin: 0 -17px; text-decoration: none; transition: background .18s; }
+.post-card-link:hover { background: #f4f2ec; }
+.post-meta { display: flex; align-items: center; gap: 12px; color: #969a94; font-size: 11px; letter-spacing: .04em; }
+.tag { display: inline-block; border-radius: 2px; padding: 4px 8px; color: #65666c; font-size: 10px; letter-spacing: .03em; }
+.tag-lavender { background: #efedf5; } .tag-green { background: #e9f0e9; color: #55705d; } .tag-orange { background: #f6eee4; color: #8b6841; }
+.post-card h3 { margin: 13px 0 8px; font-family: var(--serif); font-size: 19px; font-weight: 500; }
+.post-card p { max-width: 610px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.9; }
+.read-more { display: inline-block; margin-top: 14px; color: var(--accent); font-size: 11px; }
+.about-card { margin: 5px 0 78px; padding: 26px 28px 28px; background: #f2f0e9; }
+.about-card .eyebrow { margin-bottom: 9px; } .about-card h2 { font-size: 19px; }
+.about-card > p:last-child { max-width: 570px; margin: 11px 0 0; color: #717670; font-size: 13px; line-height: 1.9; }
+.site-footer { border-top: 1px solid var(--line); padding: 22px 20px; text-align: center; color: #989b96; font-size: 11px; }
+.site-footer p { margin: 0; }
+.site-footer .copyright { margin-top: 8px; font-size: 10px; }
+.article-shell { max-width: 680px; padding-top: 36px; padding-bottom: 65px; }
+.back-link { display: inline-block; color: var(--accent); font-size: 12px; text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+.article-content { margin-top: 54px; }
+.article-header { padding-bottom: 30px; border-bottom: 1px solid var(--line); }
+.article-header h1 { margin: 19px 0 13px; font-family: var(--serif); font-size: clamp(28px, 5vw, 38px); font-weight: 500; line-height: 1.55; }
+.article-summary { margin: 0; color: var(--muted); font-size: 14px; line-height: 2; }
+.article-body { padding-top: 21px; }
+.article-body p { margin: 0 0 22px; color: #4d524e; font-family: var(--serif); font-size: 15px; line-height: 2.25; text-indent: 2em; }
+.article-end { margin: 43px 0 31px; text-align: center; color: #9a9d97; }
+.article-end span { color: var(--accent); } .article-end p { margin: 8px 0; font-size: 11px; }
+.bottom-back { padding-top: 19px; border-top: 1px solid var(--line); }
+/* 清晰的键盘焦点与触控反馈，方便手机和平板浏览。 */
+a { -webkit-tap-highlight-color: rgba(73, 124, 105, .14); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+@media (min-width: 561px) and (max-width: 900px) {
+  .page-shell { width: min(100% - 64px, 720px); }
+  .hero { padding-top: 76px; padding-bottom: 68px; }
+  .article-shell { width: min(100% - 80px, 680px); }
+}
+@media (max-width: 560px) { .header-inner { min-height: 68px; padding: 0 22px; } nav { gap: 17px; } .page-shell { width: min(100% - 40px, 720px); } .hero { padding: 66px 0 58px; } .posts-section { padding: 54px 0 58px; } .post-card-link { padding: 21px 10px; margin: 0 -10px; } .about-card { margin-bottom: 60px; padding: 23px 21px; } .article-shell { padding-top: 28px; } .article-content { margin-top: 42px; } .article-body p { font-size: 14px; } }
